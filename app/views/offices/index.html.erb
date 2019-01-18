@@ -1,0 +1,10 @@
+<% @offices.each do |office| %>
+<div>
+  <li>Name: <%= link_to office.name, office_path(office), :data => { :officeId => office.id } %> </li>
+  <li>Company: <%= office.company %></li>
+  <br>
+ </div>
+<% end %>
+
+
+<div id="results"></div>
